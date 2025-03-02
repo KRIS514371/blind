@@ -1,0 +1,274 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Cobblestone_2_Projection
+  m_Shader: {fileID: 4800000, guid: bc1221ab332ce8544b53954312c3e79d, type: 3}
+  m_ShaderKeywords: _EMISSION _INVERTDEPTH_ON
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+    - first:
+        name: _Albedo
+      second:
+        m_Texture: {fileID: 2800000, guid: 85d7db13fe5766d479f1e0d281e0abe0, type: 3}
+        m_Scale: {x: 2, y: 2}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Albedo2
+      second:
+        m_Texture: {fileID: 2800000, guid: 1d971b6ab60699d4087dea1afc00b235, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _BumpMap
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _DetailAlbedoMap
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _DetailMask
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _DetailNormalMap
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _DummyTex
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _EmissionMap
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Height
+      second:
+        m_Texture: {fileID: 2800000, guid: ce74df8fe9922ae408940ac81ef05394, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _MainTex
+      second:
+        m_Texture: {fileID: 2800000, guid: dad74bb94c89da140af6d41458c53976, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _MetallicGlossMap
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Normal
+      second:
+        m_Texture: {fileID: 2800000, guid: 559710ab225839f4888db44222c221f9, type: 3}
+        m_Scale: {x: 2, y: 2}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Normal2
+      second:
+        m_Texture: {fileID: 2800000, guid: 909c637c8c1cd3d4584f57dd41a57cfc, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _OcclusionMap
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _ParallaxMap
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _RMA
+      second:
+        m_Texture: {fileID: 2800000, guid: a75de919cefb46a479058bc04f33e5af, type: 3}
+        m_Scale: {x: 2, y: 2}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _RMA2
+      second:
+        m_Texture: {fileID: 2800000, guid: 862a86e7a01b0104b88d2c93e8eca79f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _WaterNormal
+      second:
+        m_Texture: {fileID: 2800000, guid: 9a8d1dce6547bc4458bd0a3375369903, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _texcoord
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - first:
+        name: _BumpScale
+      second: 1
+    - first:
+        name: _Cutoff
+      second: 0.5
+    - first:
+        name: _DetailNormalMapScale
+      second: 1
+    - first:
+        name: _DstBlend
+      second: 0
+    - first:
+        name: _GlossMapScale
+      second: 1
+    - first:
+        name: _Glossiness
+      second: 1
+    - first:
+        name: _GlossyReflections
+      second: 1
+    - first:
+        name: _HeightContrast
+      second: 20
+    - first:
+        name: _InvertDepth
+      second: 1
+    - first:
+        name: _InvertHeight
+      second: 0
+    - first:
+        name: _Layer1Bias
+      second: 0
+    - first:
+        name: _Layer1Scale
+      second: 0.03
+    - first:
+        name: _Layer1Size
+      second: 2
+    - first:
+        name: _Layer1Sizesquaremeter
+      second: 4
+    - first:
+        name: _Layer1Tiling
+      second: 1
+    - first:
+        name: _Layer2Bias
+      second: 0.5
+    - first:
+        name: _Layer2Scale
+      second: 0.03
+    - first:
+        name: _Layer2Size
+      second: 4
+    - first:
+        name: _Layer2Tiling
+      second: 1
+    - first:
+        name: _Layer2squaremeter
+      second: 4
+    - first:
+        name: _Metallic
+      second: 0
+    - first:
+        name: _MetallnessValue
+      second: 1
+    - first:
+        name: _Mode
+      second: 0
+    - first:
+        name: _NormalIntensity
+      second: 1
+    - first:
+        name: _OcclusionStrength
+      second: 1
+    - first:
+        name: _Parallax
+      second: 0.02
+    - first:
+        name: _PuddlesSmoothness
+      second: 0.95
+    - first:
+        name: _Puddles_height
+      second: 0
+    - first:
+        name: _SmoothnessTextureChannel
+      second: 0
+    - first:
+        name: _SpecularHighlights
+      second: 1
+    - first:
+        name: _SrcBlend
+      second: 1
+    - first:
+        name: _TessMax
+      second: 10
+    - first:
+        name: _TessMin
+      second: 1
+    - first:
+        name: _TessPhongStrength
+      second: 0.5
+    - first:
+        name: _TessValue
+      second: 32
+    - first:
+        name: _TessellationBias
+      second: 0
+    - first:
+        name: _TessellationHeight
+      second: 0.05
+    - first:
+        name: _Tiling
+      second: 2
+    - first:
+        name: _UVSec
+      second: 0
+    - first:
+        name: _WetnessSmoothness
+      second: 0.75
+    - first:
+        name: _ZWrite
+      second: 1
+    - first:
+        name: __dirty
+      second: 0
+    m_Colors:
+    - first:
+        name: _Color
+      second: {r: 1, g: 1, b: 1, a: 1}
+    - first:
+        name: _EmissionColor
+      second: {r: 0, g: 0, b: 0, a: 1}
+    - first:
+        name: _PuddlesColor
+      second: {r: 0.27058825, g: 0.25490198, b: 0.20784314, a: 0.9019608}
+    - first:
+        name: _PuddlesColorDepth
+      second: {r: 0.27058807, g: 0.2549019, b: 0.20784298, a: 0.434}
+    - first:
+        name: _WetnessColor
+      second: {r: 0.697, g: 0.694212, b: 0.685848, a: 1}
