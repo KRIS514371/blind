@@ -5,7 +5,7 @@ using TMPro;
 public class DialogObj : MonoBehaviour
 {
     public TMP_Text tmpTxt;
-    public float fadeOutTime = 1;
+    public float fadeOutTime = 2;
     CanvasGroup canvasGroup;
 
     // Start is called before the first frame update
@@ -22,9 +22,6 @@ public class DialogObj : MonoBehaviour
     }
     public void EndDialog()
     {
-        tmpTxt.text = "";
-        Debug.Log("EndDialog");
-
         StartCoroutine(FadeOut());
     }
  
@@ -32,12 +29,13 @@ public class DialogObj : MonoBehaviour
     IEnumerator FadeOut()
     {
         Debug.Log("EndDialog" + fadeOutTime);
-        float start = fadeOutTime;
-        while (fadeOutTime > 0)
+        float timer = fadeOutTime;
+        while (timer > 0)
         {
-            canvasGroup.alpha = start / fadeOutTime;
-
             yield return new WaitForEndOfFrame();
+            timer -= Time.deltaTime;
+            canvasGroup.alpha = timer / fadeOutTime;
+           //tmpTxt.text = canvasGroup.alpha.ToString();
         }
         Destroy(gameObject);
     }

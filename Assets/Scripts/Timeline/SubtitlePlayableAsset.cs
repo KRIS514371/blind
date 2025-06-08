@@ -7,13 +7,14 @@ using UnityEngine.Playables;
 public class SubtitlePlayableAsset : PlayableAsset
 {
     public string text;
-
+    public string textEN;
+    const string Line_TEMPLATE = "<b>{0}</b> /n {1}";
     // Factory method that generates a playable based on this asset
     public override Playable CreatePlayable(PlayableGraph graph, GameObject go)
     {
         var ScriptPlayable = ScriptPlayable<SubtitleBehaviour>.Create(graph);
         var subtitleBehaviour =  ScriptPlayable.GetBehaviour();
-        subtitleBehaviour.text = text;
+        subtitleBehaviour.text = string.Format(Line_TEMPLATE, textEN, text);
       
         return ScriptPlayable;
     }

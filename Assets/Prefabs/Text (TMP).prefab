@@ -168,7 +168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmpTxt: {fileID: 982296448200695679}
-  fadeOutTime: 1
+  fadeOutTime: 1.5
 --- !u!225 &7897050484908432636
 CanvasGroup:
   m_ObjectHideFlags: 0

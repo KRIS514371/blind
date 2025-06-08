@@ -1,4 +1,4 @@
-using System.Collections;
+锘縰sing System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
@@ -11,9 +11,9 @@ public class SubtitleManager : MonoBehaviour
         else Destroy(gameObject);
     }
 
-    [Header("字幕UI生成位置")]
+    [Header("???UI????位??")]
     public Transform tragetTransform;
-    [Header("字幕Prefab")]
+    [Header("Prefab")]
     public GameObject TextUI;
     // Start is called before the first frame update
     void Start()
