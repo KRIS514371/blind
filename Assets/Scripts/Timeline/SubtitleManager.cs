@@ -11,7 +11,7 @@ public class SubtitleManager : MonoBehaviour
         else Destroy(gameObject);
     }
 
-    [Header("???UI????λ??")]
+    [Header("UIroot")]
     public Transform tragetTransform;
     [Header("Prefab")]
     public GameObject TextUI;
