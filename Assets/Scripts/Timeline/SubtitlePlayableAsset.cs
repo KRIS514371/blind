@@ -8,7 +8,7 @@ public class SubtitlePlayableAsset : PlayableAsset
 {
     public string text;
     public string textEN;
-    const string Line_TEMPLATE = "<b>{0}</b> {1}";
+    const string Line_TEMPLATE = "<b>{0}</b><br><size=60%>{1}";
     // Factory method that generates a playable based on this asset
     public override Playable CreatePlayable(PlayableGraph graph, GameObject go)
     {
