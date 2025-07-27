@@ -10,12 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
-  m_Name: Global Volume Profile
+  m_Name: Volume_1
   m_EditorClassIdentifier: 
   components:
   - {fileID: 7724253126116629041}
   - {fileID: 2154896834718770382}
   - {fileID: 895260520718003658}
+  - {fileID: 3618059661845828612}
 --- !u!114 &895260520718003658
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -34,10 +35,10 @@ MonoBehaviour:
     m_Value: 1
   gaussianStart:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 1.44
   gaussianEnd:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 4.27
   gaussianMaxRadius:
     m_OverrideState: 1
     m_Value: 0.5
@@ -77,10 +78,10 @@ MonoBehaviour:
   active: 1
   postExposure:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: -2.17
   contrast:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: 21
   colorFilter:
     m_OverrideState: 0
     m_Value: {r: 0.68238986, g: 0.75093913, b: 1, a: 1}
@@ -90,6 +91,28 @@ MonoBehaviour:
   saturation:
     m_OverrideState: 0
     m_Value: 0
+--- !u!114 &3618059661845828612
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5485954d14dfb9a4c8ead8edb0ded5b1, type: 3}
+  m_Name: LiftGammaGain
+  m_EditorClassIdentifier: 
+  active: 1
+  lift:
+    m_OverrideState: 1
+    m_Value: {x: 0.96639115, y: 0.9798194, z: 1, w: 0}
+  gamma:
+    m_OverrideState: 1
+    m_Value: {x: 0.93822545, y: 1, z: 0.9832589, w: 0}
+  gain:
+    m_OverrideState: 1
+    m_Value: {x: 0.90590787, y: 1, z: 0.96362007, w: 0}
 --- !u!114 &7724253126116629041
 MonoBehaviour:
   m_ObjectHideFlags: 3
