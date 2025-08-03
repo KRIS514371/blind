@@ -136957,7 +136957,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3686844728804843392, guid: 7d0955b2227a2034299cd89c7476b907, type: 3}
       propertyPath: stories.Array.data[3].storyEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3686844728804843392, guid: 7d0955b2227a2034299cd89c7476b907, type: 3}
       propertyPath: stories.Array.data[4].storyEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -136966,7 +136966,7 @@ PrefabInstance:
     - target: {fileID: 3686844728804843392, guid: 7d0955b2227a2034299cd89c7476b907, type: 3}
       propertyPath: stories.Array.data[3].storyEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 7400000, guid: 870852c150dc0d248be16e22e2eab2ca, type: 2}
+      objectReference: {fileID: 468799431}
     - target: {fileID: 3686844728804843392, guid: 7d0955b2227a2034299cd89c7476b907, type: 3}
       propertyPath: stories.Array.data[4].storyEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -136981,7 +136981,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3686844728804843392, guid: 7d0955b2227a2034299cd89c7476b907, type: 3}
       propertyPath: stories.Array.data[3].storyEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: set_legacy
+      value: Play
       objectReference: {fileID: 0}
     - target: {fileID: 3686844728804843392, guid: 7d0955b2227a2034299cd89c7476b907, type: 3}
       propertyPath: stories.Array.data[4].storyEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -136989,7 +136989,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3686844728804843392, guid: 7d0955b2227a2034299cd89c7476b907, type: 3}
       propertyPath: stories.Array.data[3].storyEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UnityEngine.AnimationClip, UnityEngine
+      value: UnityEngine.Animator, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3686844728804843392, guid: 7d0955b2227a2034299cd89c7476b907, type: 3}
       propertyPath: stories.Array.data[4].storyEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -136997,11 +136997,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3686844728804843392, guid: 7d0955b2227a2034299cd89c7476b907, type: 3}
       propertyPath: stories.Array.data[3].storyEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3686844728804843392, guid: 7d0955b2227a2034299cd89c7476b907, type: 3}
       propertyPath: stories.Array.data[4].storyEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3686844728804843392, guid: 7d0955b2227a2034299cd89c7476b907, type: 3}
+      propertyPath: stories.Array.data[3].storyEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Pot broken
       objectReference: {fileID: 0}
     - target: {fileID: 3686844728804843392, guid: 7d0955b2227a2034299cd89c7476b907, type: 3}
       propertyPath: stories.Array.data[3].storyEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
