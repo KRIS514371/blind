@@ -43,4 +43,14 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.UnloadSceneAsync(name);
     }
+
+    [Header("玩家组件")]
+    public Transform player; 
+    [Header("传送位置")]
+    public Transform tpPos;    
+    public void TeleportPlayer()
+    {
+        player.position = tpPos.position;
+        player.rotation = tpPos.rotation;
+    }
 }
