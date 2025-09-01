@@ -26547,7 +26547,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6c73320a0b414ac46b96148d69f51533, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 69.505
+      value: 69.337
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6c73320a0b414ac46b96148d69f51533, type: 3}
       propertyPath: m_LocalPosition.y
@@ -58865,6 +58865,10 @@ PrefabInstance:
     - target: {fileID: 4258302211244224997, guid: 43fc526e73a57ce468b495b7260284b2, type: 3}
       propertyPath: m_Name
       value: paper_2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4258302211244224997, guid: 43fc526e73a57ce468b495b7260284b2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -103275,6 +103279,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 47cbc3b52b9dc16449017ba6e1984b04, type: 3}
       propertyPath: m_Name
       value: daoshi walk (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 47cbc3b52b9dc16449017ba6e1984b04, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -1,12 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
+
+using System;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class StoryManager : MonoBehaviour
 {
-
-
-
     public Story[] stories;
 
 
@@ -21,9 +19,9 @@ public class StoryManager : MonoBehaviour
     }
 
     /// <summary>
-    /// ¿ªÊ¼¹ÊÊÂ
+    /// å¼€å§‹æ•…äº‹
     /// </summary>
-    /// <param name="name">¹ÊÊÂÃû</param>
+    /// <param name="name">æ•…äº‹å</param>
     public void LoadStory(string name)
     {
         foreach (Story story in stories)
@@ -36,9 +34,14 @@ public class StoryManager : MonoBehaviour
         }
     }
 
+    public UnityEvent OnStoryEnd;
+
     private void LoadStory(Story story)
     {
+        
         GameManager.Instance.playableDirector.Play(story.timelineAsset);
-
+        
+        story.OnStoryStart?.Invoke();
+        OnStoryEnd = story.OnStoryEnd;
     }
 }

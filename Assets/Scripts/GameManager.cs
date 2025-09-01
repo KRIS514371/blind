@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -21,17 +22,20 @@ public class GameManager : MonoBehaviour
 
     [HideInInspector]
     public StoryManager storyManager;
-    public PlayableDirector playableDirector;   
+    public PlayableDirector playableDirector;  
+  
     // Start is called before the first frame update
     void Start()
     {
-        storyManager= gameObject.GetComponent<StoryManager>();  
+        storyManager= gameObject.GetComponent<StoryManager>();
+        playableDirector.stopped += TriggerStoryEndEvent;
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+      
     }
 
     public void LoadScene(string name)
@@ -53,4 +57,11 @@ public class GameManager : MonoBehaviour
         player.position = tpPos.position;
         player.rotation = tpPos.rotation;
     }
+
+    public void TriggerStoryEndEvent(PlayableDirector director)
+    {
+       storyManager.OnStoryEnd?.Invoke();
+    }
+
+
 }
