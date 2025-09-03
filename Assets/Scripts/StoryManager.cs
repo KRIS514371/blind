@@ -2,11 +2,12 @@
 using System;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Playables;
 
 public class StoryManager : MonoBehaviour
 {
     public Story[] stories;
-
+    private Story _current;
 
     private void Start()
     {
@@ -15,6 +16,7 @@ public class StoryManager : MonoBehaviour
 
     public void LoadStory(int index)
     {
+        if (index < 0 || index >= stories.Length) return;
         LoadStory(stories[index]);
     }
 
@@ -26,10 +28,10 @@ public class StoryManager : MonoBehaviour
     {
         foreach (Story story in stories)
         {
-
             if (story.name == name)
             {
                 LoadStory(story);
+                return;
             }
         }
     }
@@ -38,10 +40,21 @@ public class StoryManager : MonoBehaviour
 
     private void LoadStory(Story story)
     {
+        _current = story;
+        var dir = GameManager.Instance?.playableDirector;
+        if (dir != null && story.timelineAsset != null)
+        {
+            // 确保自然结束能回调 stopped
+            dir.extrapolationMode = DirectorWrapMode.None;
+            dir.Play(story.timelineAsset);
+        }
+     
         
-        GameManager.Instance.playableDirector.Play(story.timelineAsset);
-        
-        story.OnStoryStart?.Invoke();
-        OnStoryEnd = story.OnStoryEnd;
+        _current.OnStoryStart?.Invoke();
+    }
+    
+    public void InvokeCurrentStoryEnd()
+    {
+        _current?.OnStoryEnd?.Invoke();
     }
 }

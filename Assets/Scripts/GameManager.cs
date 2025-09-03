@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            Destroy(Instance);
+            Destroy(gameObject);
         }
     }
 
@@ -37,7 +37,24 @@ public class GameManager : MonoBehaviour
     {
       
     }
+    private void OnEnable()
+    {
+        if (playableDirector != null)
+            playableDirector.stopped += OnDirectorStopped;
+    }
 
+    private void OnDisable()
+    {
+        if (playableDirector != null)
+            playableDirector.stopped -= OnDirectorStopped;
+    }
+
+    private void OnDirectorStopped(PlayableDirector _)
+    {
+        // 只转发，不做业务判断
+        storyManager?.InvokeCurrentStoryEnd();
+    }
+    
     public void LoadScene(string name)
     {
         SceneManager.LoadScene(name, LoadSceneMode.Additive);   

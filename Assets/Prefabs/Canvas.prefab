@@ -12,7 +12,9 @@ GameObject:
   - component: {fileID: 3048716513675891172}
   - component: {fileID: 4581681437819679314}
   - component: {fileID: 8943818074058995376}
-  m_Layer: 5
+  - component: {fileID: 8448315173577486278}
+  - component: {fileID: 9040682092907103902}
+  m_Layer: 3
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28,7 +30,7 @@ RectTransform:
   m_GameObject: {fileID: 2155731596476934281}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2938719854697216316}
@@ -49,7 +51,7 @@ Canvas:
   m_GameObject: {fileID: 2155731596476934281}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 2
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -85,7 +87,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &8943818074058995376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -103,6 +105,50 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &8448315173577486278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2155731596476934281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee10491ef6d5d1d49a270cf6b09bdc19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _enableMipmapping: 0
+  _dynamicResolution: 1
+  _redrawResolutionThreshold: 2147483647
+  rectTransform: {fileID: 1275527942645897398}
+  maxTextureSize: 2048
+  manualRedraw: 0
+  renderInterval: 1
+  renderIntervalFrameOffset: 0
+  expensive: 0
+  layer: 5
+  opacity: 2
+  shape: 1
+  curveRadius: 611.15497
+  overlapMask: 0
+  overlayType: 2
+  _overlayEnabled: 1
+--- !u!114 &9040682092907103902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2155731596476934281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d461ff811ce62a44abd6eff4545a453, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  followSpeed: 10
+  offsetDistance: 2
+  overlayCanvas: {fileID: 8448315173577486278}
 --- !u!1 &4656784751591663896
 GameObject:
   m_ObjectHideFlags: 0
@@ -114,7 +160,7 @@ GameObject:
   - component: {fileID: 4463862409667337182}
   - component: {fileID: 5141406938525714628}
   - component: {fileID: 7155614530555564060}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PointableCanvasModule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,7 +223,7 @@ GameObject:
   - component: {fileID: 2938719854697216316}
   - component: {fileID: 977393303813794170}
   - component: {fileID: 7852139038118950624}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Panel_Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
