@@ -37,8 +37,8 @@
       "url": "https://packages.unity.cn"
     },
     "com.meta.xr.sdk.core": {
-      "version": "76.0.1",
-      "depth": 1,
+      "version": "77.0.0",
+      "depth": 2,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.cn"
@@ -48,7 +48,10 @@
       "depth": 1,
       "source": "registry",
       "dependencies": {
-        "com.meta.xr.sdk.core": "76.0.1"
+        "com.meta.xr.sdk.core": "77.0.0",
+        "com.unity.textmeshpro": "3.0.6",
+        "com.unity.ai.navigation": "1.1.4",
+        "com.unity.nuget.newtonsoft-json": "3.0.2"
       },
       "url": "https://packages.unity.cn"
     },

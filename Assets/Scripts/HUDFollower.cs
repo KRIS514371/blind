@@ -8,12 +8,10 @@ public class HUDFollower : MonoBehaviour
     public float followSpeed = 5f;
     public float offsetDistance = 2f;
     
-    public OVROverlayCanvas overlayCanvas;
+    
     // Start is called before the first frame update
     void Start()
     {
-        overlayCanvas.Overlay.noDepthBufferTesting = true;
-        overlayCanvas.UpdateOverlaySettings();
     }
 
     // Update is called once per frame
